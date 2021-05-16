@@ -1,0 +1,42 @@
+<html>
+    <head><style>
+        body{background-image: url('https://gdj-inr5u0ip5pewom.stackpathdns.com/wp-content/uploads/2010/06/vector-graphic/vector-graphic-design-8.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;}
+    </style>
+        <title>
+            My Family Book
+        </title>
+    </head>
+    <body>
+        <center>
+        <h1>
+            My Family Book
+        </h1>
+        <figure><img src="1.jpg" alt="my family photo" id="family_tree"  width="400 px" height="300 px">
+            <figcaption id="fam_name">This is me(Kanav)</figcaption></figure>
+        <input type="button" value="Next" onclick="update()"> <br>
+    </center>
+
+    <script>
+        var counter=0,
+        fambook=["1.jpg","2.jpg","4.jpg","3.jpg","5.jpg","6.jpg"],
+        famname=["This is me(Kanav)","This is my mamma(Purvi)","This is my daddy(Pankit) ","This is my dada(Trikambhai)","These are my cousins(Sachi,Disha and Krish)","These are my cousins(Raam and Riddhi"]
+       function update(){
+           
+        document.getElementById("family_tree").src=fambook[counter];
+        document.getElementById("fam_name").innerHTML=famname[counter];
+        counter ++;
+        if (counter>=fambook.length && counter>=famname.length) {
+            counter=0;
+        } 
+        
+    
+        };
+
+       
+
+    </script>
+        </body>
+</html>
